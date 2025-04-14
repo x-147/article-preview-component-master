@@ -138,6 +138,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
 }
 
 .share-pop-up-text {
@@ -172,5 +176,19 @@ body {
   z-index: -1;
   top: -120%;
 
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+
   transform: rotate(45deg);
+}
+
+.share-icon:hover > .share-pop-up-box {
+  opacity: 1;
+  visibility: visible;
+}
+
+.share-icon:hover > .share-pop-up {
+  opacity: 1;
+  visibility: visible;
 }
