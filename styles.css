@@ -6,5 +6,43 @@
   box-sizing: border-box;
 }
 
+/* flex parent */
 body {
+  background-color: hsl(212, 23%, 69%);
+
+  /* this centers flex item */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* flex item */
+.main-container {
+  width: 735px;
+  height: 280px;
+  background-color: white;
+  border-radius: 10px;
+
+  display: flex;
+  position: absolute;
+  z-index: -2;
+  justify-content: end;
+}
+
+.content-container {
+  background-color: gold;
+  border-radius: 0px 10px 10px 0px;
+  width: 61%;
+}
+
+.image-container {
+  position: absolute;
+  z-index: -1;
+  left: 0%;
+}
+
+img {
+  height: 280px;
+  border-radius: 10px 0px 0px 10px;
 }
