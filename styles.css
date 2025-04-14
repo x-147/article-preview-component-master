@@ -15,12 +15,16 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+
+  font-family: 'Manrope', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 /* flex item */
 .main-container {
-  width: 735px;
-  height: 280px;
+  width: 630px;
+  height: 250px;
   background-color: white;
   border-radius: 10px;
 
@@ -31,9 +35,32 @@ body {
 }
 
 .content-container {
-  background-color: gold;
+  background-color: white;
   border-radius: 0px 10px 10px 0px;
-  width: 61%;
+  width: 60%;
+
+  padding: 24px 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+
+  height: auto;
+}
+
+.heading {
+  font-size: large;
+  font-weight: 700;
+  opacity: 0.6;
+}
+
+.content-body {
+  font-size: 11px;
+  font-weight: 600;
+  opacity: 0.4;
+  line-height: 17px;
+  text-align: left;
 }
 
 .image-container {
@@ -42,7 +69,56 @@ body {
   left: 0%;
 }
 
-img {
-  height: 280px;
+.image-container > img {
+  height: 250px;
   border-radius: 10px 0px 0px 10px;
+}
+
+/* main container at the bottom */
+.profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-picture-and-detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.profile-picture > img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.profile-details {
+}
+
+.profile-name {
+  font-size: 12px;
+  font-weight: 800;
+  opacity: 0.6;
+}
+
+.date {
+  font-size: x-small;
+  font-weight: 600;
+  opacity: 0.3;
+}
+
+.share-icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: hsl(210, 46%, 95%);
+}
+
+.share-icon > img {
 }
