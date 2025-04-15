@@ -53,7 +53,7 @@ body {
 }
 
 .heading {
-  font-size: large;
+  font-size: 1.125rem;
   font-weight: 700;
   opacity: 0.6;
 }
@@ -107,7 +107,7 @@ body {
 }
 
 .date {
-  font-size: x-small;
+  font-size: 0.625rem;
   font-weight: 600;
   opacity: 0.3;
 }
@@ -192,4 +192,61 @@ body {
 .share-icon:hover > .share-pop-up {
   opacity: 1;
   visibility: visible;
+}
+
+/* media queries */
+@media (max-width: 630px) {
+  html {
+    font-size: 12px;
+  }
+
+  .main-container {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 265px;
+    height: 400px;
+
+    background-color: skyblue;
+  }
+
+  .image-container {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .image-container > img {
+    display: block;
+    width: 100%;
+    border-radius: 8px 8px 0px 0px;
+  }
+
+  .content-container {
+    height: 61%;
+    width: 100%;
+    border-radius: 0px 0px 8px 8px;
+    z-index: 2;
+  }
+
+  .content-body {
+    font-size: 11px;
+    font-weight: 600;
+    opacity: 0.4;
+    line-height: 15px;
+    text-align: left;
+  }
+
+  .profile-name {
+    font-size: 11px;
+    font-weight: 800;
+    opacity: 0.6;
+  }
+
+  .date {
+    font-size: 9px;
+    font-weight: 600;
+    opacity: 0.3;
+  }
 }
