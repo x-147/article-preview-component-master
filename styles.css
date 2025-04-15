@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+}
+
 /* flex parent */
 body {
   background-color: hsl(212, 23%, 69%);
@@ -19,7 +23,6 @@ body {
   font-family: 'Manrope', sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  font-size: 13px;
 }
 
 /* flex item */
