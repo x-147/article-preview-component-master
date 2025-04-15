@@ -12,7 +12,7 @@ html {
 
 /* flex parent */
 body {
-  background-color: hsl(212, 23%, 69%);
+  background-color: hsl(210, 46%, 95%);
 
   /* this centers flex item */
   display: flex;
